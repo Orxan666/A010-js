@@ -1,0 +1,74 @@
+header{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    transition: 0.5s;
+    &.active{
+        background-color: red;
+        .logo{
+            h1{
+                color: black;
+
+            }
+
+        }
+        a{
+            color: black;
+        }
+    }
+    .logo{
+        width: 20%;
+        color: red;
+
+    }
+    ul{
+        width: 80%;
+        justify-content: flex-end;
+        li{
+            a{
+                text-decoration: none;
+                color: red;
+                font-size: 20px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding: 15px 20px ;
+                display: inline-block;
+            }
+        }
+    }
+    .nav-ico{
+        display: none;
+    }
+}
+@media (max-width:576px) {
+    //telefon
+    #header{
+        position: sticky;
+        top: 0;
+        ul{
+            position: absolute;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            text-align: center;
+            left: -100%;
+            transition: 0.5s;
+            background-color: black;
+            width: 100%;
+            &.active{
+                left: 0%;
+            }
+        }
+        .nav-ico{
+            display: block;
+            position: absolute;
+            right: 15px;
+            color: red;
+        }
+        &.active{
+            .nav-ico{
+                color: black;
+            }
+        }
+    }    
+}
+

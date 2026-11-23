@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/bootstrap.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
+      
+</head>
+<body>
+<section id="sectOne">
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/photo/image1.jpg" alt="">
+        </div>
+           <div class="swiper-slide">
+          <img src="assets/photo/image2.jpg" alt="">
+        </div>
+           <div class="swiper-slide">
+          <img src="assets/photo/image3.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper -->
+</section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: {
+          delay: 2500, // Hər slaydın ekranda qalma müddəti (ms ilə)
+          disableOnInteraction: true, // İstifadəçi kliklədikdə və ya sürüşdürdükdə autoplay-in dayanmaması üçün
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'progressbar',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    
+
+    <script src="assets/vendors/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
